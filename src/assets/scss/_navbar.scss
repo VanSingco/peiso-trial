@@ -1,0 +1,82 @@
+.navbar {
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+
+    &__menu {
+        margin-left: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &--item {
+
+            background-color: transparent !important;
+
+            .el-sub-menu__title {
+                background-color: transparent !important;
+            }
+        }
+
+        &--notification {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--color-primary);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-primary);
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+
+        &--select {
+            background-color: transparent !important;
+            .el-select__wrapper {
+                background-color: transparent !important;
+                border: 1px solid transparent;
+                box-shadow: none !important;
+                border-bottom: 1px solid #fff;
+                padding: 0;
+
+                .el-select__placeholder {
+                    color: #fff !important;
+                    text-transform: uppercase;
+                }
+
+                .el-select__suffix {
+                    color: #fff !important;
+                }
+                
+            }
+        }
+    }
+}
+
+.sibebar {
+    width: 100px !important;
+    padding: 62px 10px;
+    &__menu {
+        height: 100%;
+        background-color: transparent !important;
+        border: 1px solid transparent !important;
+
+        &--item {
+            .el-icon svg {
+                width: auto !important;
+                height: auto !important;
+            }
+            &:hover {
+                background-color: var(--color-secondary) !important;
+            }
+
+            &__active {
+                background-color: var(--color-secondary) !important;
+            }
+        }
+    }
+}
